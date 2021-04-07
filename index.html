@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>TDK Panaroma</title>
+
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="http://tdkillusions.lk/panaroma/assets/pannellum.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="http://tdkillusions.lk/panaroma/assets/pannellum.js"></script>
+</head>
+<body class="">
+ <div class="container m-auto py-6">
+ 	
+
+ <div class="w-full">
+ <h1 class="text-center text-2xl font-bold py-10 text-gray-700">
+ Mangusta 108
+ </h1>
+ </div>
+ <div class="w-full">
+ <div class="relative" style="padding-bottom:58%">
+ <div class="absolute inset-0">
+ <div id="panorama"></div>
+ </div>
+ </div>
+ <script>
+ pannellum.viewer('panorama', {   
+ "default": {
+ "firstScene": "19",
+ "author": "TDK Illusions",
+ "sceneFadeDuration": 1000,
+ "autoLoad": true,
+ "autoRotate": -2
+ },
+
+ "scenes": {
+  "19": {
+ "title": "Camera 01",
+ "type": "equirectangular",
+ "panorama": "http://tdkillusions.lk/panaroma/create/uploads/boat_01.jpg",
+ "hotSpots": [
+  {
+ "pitch": -11.55404568200509,
+ "yaw": -30.2539963843398,
+ "type": "scene",
+ "text": "Camera 03",
+ "sceneId":"21"
+ },
+  {
+ "pitch": -7.228498785815405,
+ "yaw": 22.83857342708908,
+ "type": "scene",
+ "text": "Camera 02",
+ "sceneId":"20"
+ },
+  ]
+ },
+  "20": {
+ "title": "Camera 02",
+ "type": "equirectangular",
+ "panorama": "http://tdkillusions.lk/panaroma/create/uploads/boat_02.jpg",
+ "hotSpots": [
+  {
+ "pitch": -4.795683705410296,
+ "yaw": -166.16670681268843,
+ "type": "scene",
+ "text": "Camera 01",
+ "sceneId":"19"
+ },
+  {
+ "pitch": -6.057197818440255,
+ "yaw": -114.4003621313866,
+ "type": "scene",
+ "text": "Camera 03",
+ "sceneId":"21"
+ },
+  ]
+ },
+  "21": {
+ "title": "Camera 03",
+ "type": "equirectangular",
+ "panorama": "http://tdkillusions.lk/panaroma/create/uploads/boat_03.jpg",
+ "hotSpots": [
+  {
+ "pitch": -5.281482814571275,
+ "yaw": 51.06199827851505,
+ "type": "scene",
+ "text": "Camera 02",
+ "sceneId":"20"
+ },
+  {
+ "pitch": -11.851543146477487,
+ "yaw": 158.62027866385048,
+ "type": "scene",
+ "text": "Camera 01",
+ "sceneId":"19"
+ },
+  ]
+ },
+ 
+ }
+ });
+ </script>
+ </div>
+ </div>
+</body>
+</html>
